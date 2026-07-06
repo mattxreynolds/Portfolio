@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className='border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950'>
-      <div className='mx-auto flex max-w-6xl flex-col gap-3 px-6 py-6 text-sm text-slate-600 dark:text-slate-400 md:flex-row md:items-center md:justify-between'>
+      <div className='mx-auto flex max-w-6xl flex-col gap-3 px-6 py-6 text-sm text-slate-600 dark:text-slate-400 sm:flex-row sm:items-center sm:justify-between'>
         <p>© 2026 Matt Reynolds. All rights reserved.</p>
 
         <div className='flex gap-2'>
