@@ -1,12 +1,17 @@
+import Footer from './components/layout/Footer';
+import Navbar from './components/layout/Navbar';
+import PageContainer from './components/layout/PageContainer';
 import AppRouter from './routes/AppRouter';
 
 function App() {
   return (
-    <main className='min-h-screen bg-slate-100 px-4 py-10 text-slate-900'>
-      <section className='mx-auto max-w-3xl rounded-2xl bg-white p-8 text-center shadow'>
+    <div className='min-h-screen bg-white dark:bg-slate-950'>
+      <Navbar />
+      <PageContainer>
         <AppRouter />
-      </section>
-    </main>
+      </PageContainer>
+      <Footer />
+    </div>
   );
 }
 
