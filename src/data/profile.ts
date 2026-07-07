@@ -21,6 +21,7 @@ const socials = [
 
 export const profile = {
   name: 'Matt Reynolds',
+  photoUrl: '',
   role: 'Computer Science Student & Aspiring Full Stack Developer',
   location: 'Canberra, Australia',
   email: 'matt.j.reynolds@iinet.net.au',
@@ -31,9 +32,9 @@ export const profile = {
   shortIntro:
     'I enjoy building practical full stack applications and improving my ability to work across the frontend, backend, database, and deployment process.',
   education: {
-    degree: 'Computer Science',
+    degree: 'Bachelor of Advanced Computing',
+    specialisation: 'Human-Centred & Creative Computing',
     institution: 'Australian National University',
     graduation: 'End of 2026'
-  },
-  hobbies: ['TBD']
+  }
 };
