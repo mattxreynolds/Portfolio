@@ -12,7 +12,7 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   }
 
   return (
-    <div className='border-t border-slate-200 bg-white px-6 py-4 dark:border-slate-800 dark:bg-slate-950 md:hidden'>
+    <div className='border-t border-border bg-surface px-6 py-4 md:hidden'>
       <div className='flex flex-col gap-4'>
         {navLinks.map((link) => (
           <NavLink
@@ -21,8 +21,8 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             onClick={onClose}
             className={({ isActive }) =>
               isActive
-                ? 'text-sm font-medium text-blue-600 dark:text-blue-400'
-                : 'text-sm font-medium text-slate-600 hover:text-slate-950 dark:text-slate-300 dark:hover:text-white'
+                ? 'text-sm font-medium text-accent'
+                : 'text-sm font-medium text-text-secondary hover:text-text-primary'
             }
           >
             {link.label}

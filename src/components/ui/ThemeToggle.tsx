@@ -43,10 +43,10 @@ function ThemeToggle() {
       aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
       aria-pressed={theme === 'dark'}
       title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-      className='relative flex h-8 w-14 items-center rounded-full bg-slate-200 p-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 dark:bg-slate-700 dark:focus-visible:ring-offset-slate-900 cursor-pointer'
+      className='relative flex h-8 w-14 items-center rounded-full bg-slate-200 p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 dark:bg-slate-700 dark:focus-visible:ring-offset-slate-900 cursor-pointer'
     >
       <span
-        className={`flex h-6 w-6 items-center justify-center rounded-full bg-white shadow transition-all dark:bg-slate-950 ${
+        className={`flex h-6 w-6 items-center justify-center rounded-full bg-background shadow transition-all ${
           theme === 'dark' ? 'translate-x-6 text-sky-300' : 'translate-x-0 text-amber-500'
         }`}
       >

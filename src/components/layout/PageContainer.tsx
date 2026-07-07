@@ -4,7 +4,7 @@ type PageContainerProps = {
 
 function PageContainer({ children }: PageContainerProps) {
   return (
-    <main className='min-h-screen bg-white py-8 text-slate-950 dark:bg-slate-950 dark:text-white'>
+    <main className='min-h-screen py-8 bg-background text-text-primary'>
       <div className='mx-auto max-w-6xl px-6'>{children}</div>
     </main>
   );

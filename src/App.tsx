@@ -5,7 +5,7 @@ import AppRouter from './routes/AppRouter';
 
 function App() {
   return (
-    <div className='min-h-screen bg-white dark:bg-slate-950'>
+    <div className='min-h-screen bg-background text-text-primary'>
       <Navbar />
       <PageContainer>
         <AppRouter />
