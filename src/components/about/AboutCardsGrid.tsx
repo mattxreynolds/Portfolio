@@ -7,11 +7,19 @@ function AboutCardsGrid() {
   return (
     <section className='grid auto-rows-fr gap-6 md:grid-cols-2'>
       <AboutCard icon={<Code2 size={22} />} title='Software development interests'>
-        <p>
-          I enjoy building practical full stack applications where I can work across the frontend,
-          backend, database, and deployment process. I am especially focused on React, TypeScript,
-          Node.js, Express and PostgreSQL.
+        <p className=''>
+          I enjoy building practical full stack applications where I can work across the entire
+          process. I am especially focused on React, TypeScript, Tailwind CSS, Node.js, Express.js
+          and PostgreSQL.
         </p>
+
+        <Link
+          to='/projects'
+          className='mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-hover'
+        >
+          See what I've worked on
+          <ExternalLink size={15} />
+        </Link>
       </AboutCard>
 
       <AboutCard icon={<GraduationCap size={22} />} title='Education'>
@@ -39,7 +47,12 @@ function AboutCardsGrid() {
       </AboutCard>
 
       <AboutCard icon={<Heart size={22} />} title='Hobbies'>
-        <p>TODO</p>
+        <p>
+          In my spare time, I enjoy staying active by playing AFL and golf, which help me stay fit
+          and challenge myself. I also love travelling and experiencing new places, cultures, and
+          food. Spending quality time with friends is equally important, as I value building strong
+          relationships and creating lasting memories together.
+        </p>
       </AboutCard>
 
       <AboutCard icon={<Rocket size={22} />} title='Career direction'>
@@ -51,7 +64,7 @@ function AboutCardsGrid() {
 
         <Link
           to='/contact'
-          className='mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-hover'
+          className='mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-hover'
         >
           Contact me
           <ExternalLink size={15} />
