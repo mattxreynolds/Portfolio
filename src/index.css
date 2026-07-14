@@ -56,11 +56,22 @@
 
 html {
   background-color: var(--background);
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   background-color: var(--background);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background-color: var(--accent-soft);
   color: var(--text-primary);
 }
 
