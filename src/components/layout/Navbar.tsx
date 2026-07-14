@@ -4,9 +4,13 @@ import { navLinks } from '../../data/navLinks';
 import MobileMenu from './MobileMenu';
 import { X, Menu } from 'lucide-react';
 import ThemeToggle from '../ui/ThemeToggle';
+import { profile } from '../../data/profile';
+import ResumeButton from '../ui/ResumeButton';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const displayName = profile.name;
 
   function toggleMenu() {
     setIsMenuOpen((currentValue) => !currentValue);
@@ -21,7 +25,7 @@ function Navbar() {
       <nav className='mx-auto flex max-w-6xl items-center justify-between px-6 py-4'>
         <div className='flex items-center gap-4'>
           <NavLink to='/' className='text-lg font-bold text-text-primary' onClick={closeMenu}>
-            Matt Reynolds
+            {displayName}
           </NavLink>
         </div>
 
@@ -42,6 +46,9 @@ function Navbar() {
         </div>
 
         <div className='flex items-center gap-4'>
+          <div className='hidden md:block'>
+            <ResumeButton />
+          </div>
           <ThemeToggle />
           <button
             type='button'
