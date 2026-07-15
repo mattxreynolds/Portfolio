@@ -24,18 +24,17 @@ function MyStory() {
 
         <div className='mt-5 space-y-5 text-base leading-8 text-text-secondary'>
           <p>
-            I got into software development through years of learning, experimenting, and building
-            projects. Over time, I became more interested in creating practical applications that
-            solve real problems, especially web apps where I can work across the frontend, backend,
-            database, and deployment process.
+            I got into software development after taking a computer science course during my
+            engineering degree. I quickly fell in love with solving problems through code and
+            building applications, especially web apps where I can work across the frontend, backend
+            and deployment process.
           </p>
 
           <p>
-            I enjoy software development because it combines problem solving, creativity, and
+            I enjoy software development because it combines problem solving, creativity and
             continuous learning. Right now, I am focused on improving as a full stack developer with
-            React, TypeScript, Node.js, Express, PostgreSQL, and Tailwind CSS. My goal is to keep
-            building useful projects and work towards junior developer, graduate developer, or
-            internship opportunities.
+            React, TypeScript, Node.js, Express, PostgreSQL and Tailwind CSS, while also
+            understanding how AI can be used to improve my ability to build and produce things.
           </p>
         </div>
 

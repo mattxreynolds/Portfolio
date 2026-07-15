@@ -30,7 +30,7 @@ export const profile = {
   isResumeAvailable: false,
   openToWork: 'Open to junior developer, graduate developer, and internship opportunities.',
   shortIntro:
-    'I enjoy building practical full stack applications and improving my ability to work across the frontend, backend, database, and deployment process.',
+    'I enjoy building practical full stack applications and improving my ability to work across the frontend, backend and deployment process.',
   education: {
     degree: 'Bachelor of Advanced Computing',
     specialisation: 'Human-Centred & Creative Computing',
