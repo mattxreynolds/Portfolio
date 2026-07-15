@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import ProjectCard from '../components/projects/ProjectCard';
 import ProjectFilter from '../components/projects/ProjectFilter';
 import { projects, type ProjectFilter as ProjectFilterType } from '../data/projects';

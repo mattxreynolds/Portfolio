@@ -1,8 +1,7 @@
 import { ExternalLink, Layers3, Monitor, Server } from 'lucide-react';
-
-import type { Project, ProjectCategory } from '../../data/projects';
 import { FaGithub } from 'react-icons/fa';
 import ProjectTags from './ProjectTags';
+import type { Project, ProjectCategory } from '../../data/projects';
 
 type ProjectCardProps = {
   project: Project;
