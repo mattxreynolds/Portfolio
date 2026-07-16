@@ -8,10 +8,10 @@ function getSafeExternalUrl(url: string) {
 
 function ContactDetails() {
   return (
-    <div className='rounded-3xl border border-border bg-surface p-6 shadow-sm md:p-8'>
-      <h2 className='text-2xl font-bold text-text-primary'>Contact details</h2>
+    <div className='rounded-3xl border border-border bg-surface px-4 py-6 shadow-sm md:p-8'>
+      <h2 className='px-2 text-2xl font-bold text-text-primary'>Contact details</h2>
 
-      <p className='mt-3 max-w-xl leading-7 text-text-secondary'>
+      <p className='px-2 mt-3 max-w-xl leading-7 text-text-secondary'>
         The best way to contact me is by email or LinkedIn. I am open to discussing graduate,
         internship, and junior developer opportunities.
       </p>
@@ -27,7 +27,9 @@ function ContactDetails() {
 
           <span>
             <span className='block text-sm font-medium text-text-muted'>Email</span>
-            <span className='block font-semibold text-text-primary'>{profile.email}</span>
+            <span className='block text-sm sm:text-base font-semibold text-text-primary'>
+              {profile.email}
+            </span>
           </span>
         </a>
 
@@ -38,7 +40,9 @@ function ContactDetails() {
 
           <span>
             <span className='block text-sm font-medium text-text-muted'>Location</span>
-            <span className='block font-semibold text-text-primary'>{profile.location}</span>
+            <span className='block text-sm sm:text-base font-semibold text-text-primary'>
+              {profile.location}
+            </span>
           </span>
         </div>
 
@@ -54,7 +58,9 @@ function ContactDetails() {
 
           <span>
             <span className='block text-sm font-medium text-text-muted'>GitHub</span>
-            <span className='block font-semibold text-text-primary'>View GitHub profile</span>
+            <span className='block text-sm sm:text-base font-semibold text-text-primary'>
+              View GitHub profile
+            </span>
           </span>
         </a>
 
@@ -70,7 +76,9 @@ function ContactDetails() {
 
           <span>
             <span className='block text-sm font-medium text-text-muted'>LinkedIn</span>
-            <span className='block font-semibold text-text-primary'>Connect on LinkedIn</span>
+            <span className='block text-sm sm:text-base font-semibold text-text-primary'>
+              Connect on LinkedIn
+            </span>
           </span>
         </a>
       </div>
