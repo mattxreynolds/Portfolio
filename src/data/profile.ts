@@ -26,8 +26,8 @@ export const profile = {
   location: 'Canberra, Australia',
   email: 'matt.j.reynolds@iinet.net.au',
   socials: socials,
-  resumeUrl: '#',
-  isResumeAvailable: false,
+  resumeUrl: 'src/assets/Matt_Reynolds_Resume.pdf',
+  isResumeAvailable: true,
   openToWork: 'Open to junior developer, graduate developer, and internship opportunities.',
   shortIntro:
     'I enjoy building practical full stack applications and improving my ability to work across the frontend, backend and deployment process.',
