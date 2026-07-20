@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { profile } from '../../data/profile';
-import { ArrowRight, Code2 } from 'lucide-react';
+import { ArrowRight, Code2, LoaderCircle } from 'lucide-react';
 
 function MyStory() {
   return (
@@ -14,7 +14,7 @@ function MyStory() {
           />
         ) : (
           <div className='flex min-h-80 h-full items-center justify-center text-center text-sm text-text-muted'>
-            Profile photo TBD
+            <LoaderCircle className='animate-spin size-10 text-accent' />
           </div>
         )}
       </div>

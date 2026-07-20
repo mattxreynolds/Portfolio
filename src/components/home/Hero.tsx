@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import { profile } from '../../data/profile';
 import { FaLocationDot } from 'react-icons/fa6';
 import { FaArrowRight } from 'react-icons/fa';
-import { FileText, Mail } from 'lucide-react';
+import { FileText, LoaderCircle, Mail } from 'lucide-react';
 
 function HeroActions() {
   return (
@@ -87,7 +87,7 @@ function Hero() {
 
       <div className='max-w-125 w-full mx-auto rounded-3xl border border-border bg-surface p-4 shadow-sm'>
         <div className='flex aspect-square items-center justify-center rounded-2xl bg-surface-muted text-center text-sm text-text-muted'>
-          Profile photo TBD
+          <LoaderCircle className='animate-spin size-10 text-accent' />
         </div>
       </div>
     </section>
