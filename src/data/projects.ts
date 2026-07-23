@@ -164,5 +164,17 @@ export const projects: Project[] = [
     liveUrl: 'TBD',
     featured: false,
     status: 'Complete'
+  },
+  {
+    id: 'the-odin-project',
+    title: 'The Odin Project',
+    description:
+      'A collection of my projects, exercises, and notes as I work through The Odin Project’s Foundations & JavaScript path, building my skills in HTML, CSS, JavaScript, Git, React, Node.js, and full-stack web development.',
+    tags: ['React', 'JavaScript', 'CSS', 'HTML', 'Express.js', 'PostreSQL', 'Node.js', 'Github'],
+    category: 'Full Stack',
+    githubUrl: 'https://github.com/mattxreynolds/my-odin-project',
+    liveUrl: 'TBD',
+    featured: false,
+    status: 'In Progress'
   }
 ];
