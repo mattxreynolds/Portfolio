@@ -93,7 +93,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/mattxreynolds/Portfolio',
     liveUrl: 'TBD',
     featured: true,
-    status: 'In Progress'
+    status: 'Complete'
   },
   {
     id: 'task-manager',
