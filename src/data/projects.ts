@@ -1,4 +1,4 @@
-export type ProjectCategory = 'Frontend' | 'Backend' | 'Full Stack';
+export type ProjectCategory = 'Frontend' | 'Backend' | 'Full Stack' | 'Coursework';
 
 export type ProjectStatus = 'Complete' | 'In Progress';
 
@@ -14,7 +14,7 @@ export type Project = {
   status: ProjectStatus;
 };
 
-export const projectCategories = ['All', 'Frontend', 'Backend', 'Full Stack'] as const;
+export const projectCategories = ['All', 'Frontend', 'Backend', 'Full Stack', 'Coursework'] as const;
 
 export type ProjectFilter = (typeof projectCategories)[number];
 
@@ -175,6 +175,18 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/mattxreynolds/my-odin-project',
     liveUrl: 'TBD',
     featured: false,
+    status: 'In Progress'
+  },
+  {
+    id: 'comp4020-showcase',
+    title: 'COMP4020 Coursework',
+    description:
+      "Weekly crits and assignments from ANU's Agentic Coding Studio course — AI-agent-built web prototypes, shipped and marked live each week.",
+    tags: ['Claude Code', 'Vite', 'TypeScript', 'Astro', 'GitHub Actions', 'GitHub Pages', 'pnpm'],
+    category: 'Coursework',
+    githubUrl: 'https://github.com/mattxreynolds/comp4020-showcase',
+    liveUrl: 'https://mattxreynolds.github.io/comp4020-showcase/',
+    featured: true,
     status: 'In Progress'
   }
 ];
