@@ -67,7 +67,6 @@ export const projects: Project[] = [
     ],
     category: 'Full Stack',
     githubUrl: 'https://github.com/mattxreynolds/Grocify',
-    liveUrl: 'TBD',
     featured: true,
     status: 'Complete'
   },
@@ -91,13 +90,13 @@ export const projects: Project[] = [
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router', 'GitHub'],
     category: 'Frontend',
     githubUrl: 'https://github.com/mattxreynolds/Portfolio',
-    liveUrl: 'TBD',
+    liveUrl: 'https://portfolio-self-beta-u1z50hbaai.vercel.app',
     featured: true,
     status: 'Complete'
   },
   {
     id: 'task-manager',
-    title: 'Devloper Task Manager',
+    title: 'Developer Task Manager',
     description:
       'A full-stack task manager app where authenticated users can create projects and manage tasks inside each project. Built entirely by Codex.',
     tags: [
@@ -105,7 +104,7 @@ export const projects: Project[] = [
       'Express.js',
       'TypeScript',
       'Prisma',
-      'PostreSQL',
+      'PostgreSQL',
       'JWT',
       'Tailwind CSS',
       'Render',
@@ -122,10 +121,9 @@ export const projects: Project[] = [
     title: 'To-Do Dashboard',
     description:
       'A Dockerized full-stack todo dashboard with Express, PostgreSQL, Prisma, and JWT authentication.',
-    tags: ['Node.js', 'Express.js', 'Docker', 'Prisma', 'PostreSQL', 'JWT', 'BCrypt'],
+    tags: ['Node.js', 'Express.js', 'Docker', 'Prisma', 'PostgreSQL', 'JWT', 'bcryptjs'],
     category: 'Backend',
     githubUrl: 'https://github.com/mattxreynolds/To-Do-Dashboard',
-    liveUrl: 'TBD',
     featured: false,
     status: 'Complete'
   },
@@ -137,7 +135,6 @@ export const projects: Project[] = [
     tags: ['JavaScript', 'CSS', 'HTML', 'VS Code', 'Chrome DevTools', 'GitHub'],
     category: 'Frontend',
     githubUrl: 'https://github.com/mattxreynolds/JavaScript-Course',
-    liveUrl: 'TBD',
     featured: false,
     status: 'Complete'
   },
@@ -145,11 +142,10 @@ export const projects: Project[] = [
     id: 'html-css-course',
     title: 'HTML & CSS Course',
     description:
-      'A collection of my practice code, exercises, and mini-project completed while working through a HTML & CSS crash course. Documenting my progress and understanding of core concepts.',
+      'A collection of my practice code, exercises, and mini-projects completed while working through an HTML & CSS crash course. Documenting my progress and understanding of core concepts.',
     tags: ['CSS', 'HTML', 'VS Code', 'Chrome DevTools', 'GitHub'],
     category: 'Frontend',
     githubUrl: 'https://github.com/mattxreynolds/HTML-CSS-Course',
-    liveUrl: 'TBD',
     featured: false,
     status: 'Complete'
   },
@@ -161,7 +157,6 @@ export const projects: Project[] = [
     tags: ['React', 'JavaScript', 'CSS', 'HTML', 'React Router', 'Vite', 'Node.js', 'Vitest'],
     category: 'Frontend',
     githubUrl: 'https://github.com/mattxreynolds/React-Course',
-    liveUrl: 'TBD',
     featured: false,
     status: 'Complete'
   },
@@ -170,10 +165,9 @@ export const projects: Project[] = [
     title: 'The Odin Project',
     description:
       'A collection of my projects, exercises, and notes as I work through The Odin Project’s Foundations & JavaScript path, building my skills in HTML, CSS, JavaScript, Git, React, Node.js, and full-stack web development.',
-    tags: ['React', 'JavaScript', 'CSS', 'HTML', 'Express.js', 'PostreSQL', 'Node.js', 'Github'],
+    tags: ['React', 'JavaScript', 'CSS', 'HTML', 'Express.js', 'PostgreSQL', 'Node.js', 'GitHub'],
     category: 'Full Stack',
     githubUrl: 'https://github.com/mattxreynolds/my-odin-project',
-    liveUrl: 'TBD',
     featured: false,
     status: 'In Progress'
   },

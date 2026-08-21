@@ -7,10 +7,6 @@ type ProjectCardProps = {
   project: Project;
 };
 
-function getSafeExternalUrl(url: string) {
-  return url === 'TBD' ? '#' : url;
-}
-
 function getCategoryIcon(category: ProjectCategory) {
   if (category === 'Frontend') {
     return <Monitor size={20} />;
@@ -24,8 +20,6 @@ function getCategoryIcon(category: ProjectCategory) {
 }
 
 function ProjectCard({ project }: ProjectCardProps) {
-  const hasLiveDemo = project.liveUrl && project.liveUrl !== 'TBD';
-
   return (
     <article className='flex h-full flex-col rounded-2xl border border-border bg-surface p-6 shadow-sm transition hover:-translate-y-1 hover:border-accent/40 hover:shadow-md'>
       <div className='flex items-start justify-between gap-4'>
@@ -46,16 +40,16 @@ function ProjectCard({ project }: ProjectCardProps) {
 
       <div className='mt-6 flex flex-wrap justify-between gap-3'>
         <a
-          href={getSafeExternalUrl(project.githubUrl)}
-          target={project.githubUrl === 'TBD' ? undefined : '_blank'}
-          rel={project.githubUrl === 'TBD' ? undefined : 'noreferrer'}
+          href={project.githubUrl}
+          target='_blank'
+          rel='noreferrer'
           className='inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-semibold text-text-primary transition hover:bg-surface-muted'
         >
           <FaGithub size={16} />
           Code
         </a>
 
-        {hasLiveDemo && (
+        {project.liveUrl && (
           <a
             href={project.liveUrl}
             target='_blank'
