@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import resumeUrl from '../assets/Matt_Reynolds_Resume.pdf';
 
 const socials = [
   {
@@ -26,7 +27,7 @@ export const profile = {
   location: 'Canberra, Australia',
   email: 'matt.j.reynolds@iinet.net.au',
   socials: socials,
-  resumeUrl: 'src/assets/Matt_Reynolds_Resume.pdf',
+  resumeUrl,
   isResumeAvailable: true,
   openToWork: 'Open to junior developer, graduate developer, and internship opportunities.',
   shortIntro:
