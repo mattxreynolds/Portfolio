@@ -75,7 +75,7 @@ export const projects: Project[] = [
     title: 'Weather Dashboard',
     description:
       'Responsive weather dashboard with city search, current-location forecasts, hourly charts, 7-day outlooks, dark mode, and custom units.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'ReCharts', 'OpenStreetMap', 'GitHub'],
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Recharts', 'OpenStreetMap', 'GitHub'],
     category: 'Frontend',
     githubUrl: 'https://github.com/mattxreynolds/Weather-Dashboard',
     liveUrl: 'https://weather-dashboard-mu-khaki.vercel.app/',
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     id: 'task-manager',
     title: 'Developer Task Manager',
     description:
-      'A full-stack task manager app where authenticated users can create projects and manage tasks inside each project. Built entirely by Codex.',
+      'Full-stack task management app with JWT authentication, project-based task organization, and a React/TypeScript frontend backed by Express, Prisma, and PostgreSQL. Developed as an end-to-end Codex experiment.',
     tags: [
       'React',
       'Express.js',
