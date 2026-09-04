@@ -72,7 +72,13 @@ function Hero() {
 
         <div className='mt-4 flex items-center gap-3'>
           {profile.socials.map((social) => (
-            <a key={social.label} href={social.href} target='_blank' aria-label={social.label}>
+            <a
+              key={social.label}
+              href={social.href}
+              target='_blank'
+              rel='noreferrer'
+              aria-label={social.label}
+            >
               <social.icon size={30} />
             </a>
           ))}
