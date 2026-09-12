@@ -1,4 +1,4 @@
-import { ExternalLink, Layers3, Monitor, Server } from 'lucide-react';
+import { ExternalLink, Gamepad2, Layers3, Monitor, Server } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import ProjectTags from './ProjectTags';
 import type { Project, ProjectCategory } from '../../data/projects';
@@ -14,6 +14,10 @@ function getCategoryIcon(category: ProjectCategory) {
 
   if (category === 'Backend') {
     return <Server size={20} />;
+  }
+
+  if (category === 'Game Development') {
+    return <Gamepad2 size={20} />;
   }
 
   return <Layers3 size={20} />;

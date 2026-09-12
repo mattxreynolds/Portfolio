@@ -1,4 +1,4 @@
-export type ProjectCategory = 'Frontend' | 'Backend' | 'Full Stack' | 'Coursework';
+export type ProjectCategory = 'Frontend' | 'Backend' | 'Full Stack' | 'Game Development';
 
 export type ProjectStatus = 'Complete' | 'In Progress';
 
@@ -14,7 +14,13 @@ export type Project = {
   status: ProjectStatus;
 };
 
-export const projectCategories = ['All', 'Frontend', 'Backend', 'Full Stack', 'Coursework'] as const;
+export const projectCategories = [
+  'All',
+  'Frontend',
+  'Backend',
+  'Full Stack',
+  'Game Development'
+] as const;
 
 export type ProjectFilter = (typeof projectCategories)[number];
 
@@ -23,20 +29,21 @@ export const projects: Project[] = [
     id: 'the-odin-project',
     title: 'The Odin Project',
     description:
-      'A collection of my projects, exercises, and notes as I work through The Odin Project’s Foundations & JavaScript path, building my skills in HTML, CSS, JavaScript, Git, React, Node.js, and full-stack web development.',
+      'A collection of projects, exercises, and notes from The Odin Project, documenting my progress across HTML, CSS, JavaScript, React, Node.js, databases, and full-stack development.',
     tags: ['React', 'JavaScript', 'CSS', 'HTML', 'Express.js', 'PostgreSQL', 'Node.js', 'GitHub'],
     category: 'Full Stack',
     githubUrl: 'https://github.com/mattxreynolds/my-odin-project',
+    liveUrl: 'https://mattxreynolds.github.io/my-odin-project/',
     featured: true,
     status: 'In Progress'
   },
   {
     id: 'comp4020-showcase',
-    title: 'COMP4020 Coursework',
+    title: 'COMP4020 Showcase',
     description:
-      "Weekly crits and assignments from ANU's Agentic Coding Studio course — AI-agent-built web prototypes, shipped and marked live each week.",
+      'A showcase of weekly critiques and assignments from ANU’s Agentic Coding Studio, featuring AI-agent-built web projects developed, deployed, and presented throughout the course.',
     tags: ['Claude Code', 'Vite', 'TypeScript', 'Astro', 'GitHub Actions', 'GitHub Pages', 'pnpm'],
-    category: 'Coursework',
+    category: 'Full Stack',
     githubUrl: 'https://github.com/mattxreynolds/comp4020-showcase',
     liveUrl: 'https://mattxreynolds.github.io/comp4020-showcase/',
     featured: true,
@@ -46,7 +53,7 @@ export const projects: Project[] = [
     id: 'weather-dashboard',
     title: 'Weather Dashboard',
     description:
-      'Responsive weather dashboard with city search, current-location forecasts, hourly charts, 7-day outlooks, dark mode, and custom units.',
+      'A responsive weather dashboard with city search, location-based forecasts, hourly charts, seven-day outlooks, dark mode, configurable units, and clear data visualisations.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Recharts', 'OpenStreetMap', 'GitHub'],
     category: 'Frontend',
     githubUrl: 'https://github.com/mattxreynolds/Weather-Dashboard',
@@ -58,9 +65,9 @@ export const projects: Project[] = [
     id: 'j-force',
     title: 'J Force',
     description:
-      'A team-built top-down pixel shooter set in a dystopian future, featuring branching dialogue, non-linear missions, dynamic cutscenes, enemy AI, save/load systems, and original art and music.',
+      'A team-built top-down pixel shooter set in a dystopian future, featuring branching dialogue, non-linear missions, dynamic cutscenes, enemy AI, save systems, and original art and music.',
     tags: ['Unity', 'C#', 'ShaderLab', 'HLSL', 'Game Development', 'GitHub'],
-    category: 'Coursework',
+    category: 'Game Development',
     githubUrl: 'https://github.com/1911-revo/Video-Game-Team-Project',
     featured: false,
     status: 'Complete'
@@ -69,7 +76,7 @@ export const projects: Project[] = [
     id: 'developer-portfolio',
     title: 'Developer Portfolio',
     description:
-      'A personal portfolio website built to present projects, skills, and contact information for software development opportunities.',
+      'A responsive personal portfolio for presenting my projects, technical skills, experience, and contact details, with accessible light and dark themes across every page.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router', 'GitHub'],
     category: 'Frontend',
     githubUrl: 'https://github.com/mattxreynolds/Portfolio',
@@ -81,7 +88,7 @@ export const projects: Project[] = [
     id: 'swift-cart',
     title: 'SwiftCart',
     description:
-      'Full-stack grocery delivery app with product browsing, cart checkout, Stripe payments, admin tools, delivery partner workflow, and live order tracking.',
+      'A full-stack grocery delivery platform with product browsing, cart checkout, Stripe payments, administrative tools, delivery workflows, and live order tracking for customers.',
     tags: [
       'React',
       'TypeScript',
@@ -108,7 +115,7 @@ export const projects: Project[] = [
     id: 'grocify',
     title: 'Grocify',
     description:
-      'Grocify is an Expo React Native grocery planner with smart list insights for planning, tracking, and completing shopping trips.',
+      'A mobile grocery-planning app with smart list insights, trip tracking, secure accounts, and a streamlined workflow for planning and completing weekly shopping.',
     tags: [
       'React Native',
       'Nativewind',
@@ -132,7 +139,7 @@ export const projects: Project[] = [
     id: 'task-manager',
     title: 'Developer Task Manager',
     description:
-      'Full-stack task management app with JWT authentication, project-based task organization, and a React/TypeScript frontend backed by Express, Prisma, and PostgreSQL. Developed as an end-to-end Codex experiment.',
+      'A full-stack task management app with secure authentication, project-based organization, and a React frontend backed by Express, Prisma, and PostgreSQL, built as a Codex experiment.',
     tags: [
       'React',
       'Express.js',
@@ -154,7 +161,7 @@ export const projects: Project[] = [
     id: 'to-do-dashboard',
     title: 'To-Do Dashboard',
     description:
-      'A Dockerized full-stack todo dashboard with Express, PostgreSQL, Prisma, and JWT authentication.',
+      'A Dockerized full-stack task dashboard with JWT authentication, project organization, and an Express API backed by Prisma and PostgreSQL for reliable data persistence.',
     tags: ['Node.js', 'Express.js', 'Docker', 'Prisma', 'PostgreSQL', 'JWT', 'bcryptjs'],
     category: 'Backend',
     githubUrl: 'https://github.com/mattxreynolds/To-Do-Dashboard',
