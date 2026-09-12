@@ -20,6 +20,53 @@ export type ProjectFilter = (typeof projectCategories)[number];
 
 export const projects: Project[] = [
   {
+    id: 'the-odin-project',
+    title: 'The Odin Project',
+    description:
+      'A collection of my projects, exercises, and notes as I work through The Odin Project’s Foundations & JavaScript path, building my skills in HTML, CSS, JavaScript, Git, React, Node.js, and full-stack web development.',
+    tags: ['React', 'JavaScript', 'CSS', 'HTML', 'Express.js', 'PostgreSQL', 'Node.js', 'GitHub'],
+    category: 'Full Stack',
+    githubUrl: 'https://github.com/mattxreynolds/my-odin-project',
+    featured: true,
+    status: 'In Progress'
+  },
+  {
+    id: 'comp4020-showcase',
+    title: 'COMP4020 Coursework',
+    description:
+      "Weekly crits and assignments from ANU's Agentic Coding Studio course — AI-agent-built web prototypes, shipped and marked live each week.",
+    tags: ['Claude Code', 'Vite', 'TypeScript', 'Astro', 'GitHub Actions', 'GitHub Pages', 'pnpm'],
+    category: 'Coursework',
+    githubUrl: 'https://github.com/mattxreynolds/comp4020-showcase',
+    liveUrl: 'https://mattxreynolds.github.io/comp4020-showcase/',
+    featured: true,
+    status: 'In Progress'
+  },
+  {
+    id: 'weather-dashboard',
+    title: 'Weather Dashboard',
+    description:
+      'Responsive weather dashboard with city search, current-location forecasts, hourly charts, 7-day outlooks, dark mode, and custom units.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Recharts', 'OpenStreetMap', 'GitHub'],
+    category: 'Frontend',
+    githubUrl: 'https://github.com/mattxreynolds/Weather-Dashboard',
+    liveUrl: 'https://weather-dashboard-mu-khaki.vercel.app/',
+    featured: true,
+    status: 'Complete'
+  },
+  {
+    id: 'developer-portfolio',
+    title: 'Developer Portfolio',
+    description:
+      'A personal portfolio website built to present projects, skills, and contact information for software development opportunities.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router', 'GitHub'],
+    category: 'Frontend',
+    githubUrl: 'https://github.com/mattxreynolds/Portfolio',
+    liveUrl: 'https://portfolio-self-beta-u1z50hbaai.vercel.app',
+    featured: false,
+    status: 'Complete'
+  },
+  {
     id: 'swift-cart',
     title: 'SwiftCart',
     description:
@@ -67,30 +114,6 @@ export const projects: Project[] = [
     ],
     category: 'Full Stack',
     githubUrl: 'https://github.com/mattxreynolds/Grocify',
-    featured: false,
-    status: 'Complete'
-  },
-  {
-    id: 'weather-dashboard',
-    title: 'Weather Dashboard',
-    description:
-      'Responsive weather dashboard with city search, current-location forecasts, hourly charts, 7-day outlooks, dark mode, and custom units.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Recharts', 'OpenStreetMap', 'GitHub'],
-    category: 'Frontend',
-    githubUrl: 'https://github.com/mattxreynolds/Weather-Dashboard',
-    liveUrl: 'https://weather-dashboard-mu-khaki.vercel.app/',
-    featured: true,
-    status: 'Complete'
-  },
-  {
-    id: 'developer-portfolio',
-    title: 'Developer Portfolio',
-    description:
-      'A personal portfolio website built to present projects, skills, and contact information for software development opportunities.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router', 'GitHub'],
-    category: 'Frontend',
-    githubUrl: 'https://github.com/mattxreynolds/Portfolio',
-    liveUrl: 'https://portfolio-self-beta-u1z50hbaai.vercel.app',
     featured: false,
     status: 'Complete'
   },
@@ -159,28 +182,5 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/mattxreynolds/React-Course',
     featured: false,
     status: 'Complete'
-  },
-  {
-    id: 'the-odin-project',
-    title: 'The Odin Project',
-    description:
-      'A collection of my projects, exercises, and notes as I work through The Odin Project’s Foundations & JavaScript path, building my skills in HTML, CSS, JavaScript, Git, React, Node.js, and full-stack web development.',
-    tags: ['React', 'JavaScript', 'CSS', 'HTML', 'Express.js', 'PostgreSQL', 'Node.js', 'GitHub'],
-    category: 'Full Stack',
-    githubUrl: 'https://github.com/mattxreynolds/my-odin-project',
-    featured: true,
-    status: 'In Progress'
-  },
-  {
-    id: 'comp4020-showcase',
-    title: 'COMP4020 Coursework',
-    description:
-      "Weekly crits and assignments from ANU's Agentic Coding Studio course — AI-agent-built web prototypes, shipped and marked live each week.",
-    tags: ['Claude Code', 'Vite', 'TypeScript', 'Astro', 'GitHub Actions', 'GitHub Pages', 'pnpm'],
-    category: 'Coursework',
-    githubUrl: 'https://github.com/mattxreynolds/comp4020-showcase',
-    liveUrl: 'https://mattxreynolds.github.io/comp4020-showcase/',
-    featured: true,
-    status: 'In Progress'
   }
 ];
