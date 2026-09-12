@@ -92,9 +92,17 @@ function Hero() {
       </div>
 
       <div className='max-w-125 w-full mx-auto rounded-3xl border border-border bg-surface p-4 shadow-sm'>
-        <div className='flex aspect-square items-center justify-center rounded-2xl bg-surface-muted text-center text-sm text-text-muted'>
-          <LoaderCircle className='animate-spin size-10 text-accent' />
-        </div>
+        {profile.photoUrl ? (
+          <img
+            src={profile.photoUrl}
+            alt={`${profile.name} profile`}
+            className='aspect-square w-full rounded-2xl object-cover'
+          />
+        ) : (
+          <div className='flex aspect-square items-center justify-center rounded-2xl bg-surface-muted text-center text-sm text-text-muted'>
+            <LoaderCircle className='animate-spin size-10 text-accent' />
+          </div>
+        )}
       </div>
     </section>
   );

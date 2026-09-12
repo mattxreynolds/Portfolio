@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import resumeUrl from '../assets/Matt_Reynolds_Resume.pdf';
+import photoUrl from '../assets/Matt_Reynolds_Profile.jpeg';
 
 const socials = [
   {
@@ -22,7 +23,7 @@ const socials = [
 
 export const profile = {
   name: 'Matt Reynolds',
-  photoUrl: '',
+  photoUrl,
   role: 'Computer Science Student & Aspiring Full Stack Developer',
   location: 'Canberra, Australia',
   email: 'matt.j.reynolds@iinet.net.au',
