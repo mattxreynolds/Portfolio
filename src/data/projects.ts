@@ -43,7 +43,7 @@ export const projects: Project[] = [
     category: 'Full Stack',
     githubUrl: 'https://github.com/mattxreynolds/SwiftCart',
     liveUrl: 'https://swift-cart-tau-woad.vercel.app/',
-    featured: true,
+    featured: false,
     status: 'Complete'
   },
   {
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     ],
     category: 'Full Stack',
     githubUrl: 'https://github.com/mattxreynolds/Grocify',
-    featured: true,
+    featured: false,
     status: 'Complete'
   },
   {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     category: 'Frontend',
     githubUrl: 'https://github.com/mattxreynolds/Portfolio',
     liveUrl: 'https://portfolio-self-beta-u1z50hbaai.vercel.app',
-    featured: true,
+    featured: false,
     status: 'Complete'
   },
   {
@@ -168,7 +168,7 @@ export const projects: Project[] = [
     tags: ['React', 'JavaScript', 'CSS', 'HTML', 'Express.js', 'PostgreSQL', 'Node.js', 'GitHub'],
     category: 'Full Stack',
     githubUrl: 'https://github.com/mattxreynolds/my-odin-project',
-    featured: false,
+    featured: true,
     status: 'In Progress'
   },
   {
