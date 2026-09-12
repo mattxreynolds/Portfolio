@@ -55,6 +55,17 @@ export const projects: Project[] = [
     status: 'Complete'
   },
   {
+    id: 'j-force',
+    title: 'J Force',
+    description:
+      'A team-built top-down pixel shooter set in a dystopian future, featuring branching dialogue, non-linear missions, dynamic cutscenes, enemy AI, save/load systems, and original art and music.',
+    tags: ['Unity', 'C#', 'ShaderLab', 'HLSL', 'Game Development', 'GitHub'],
+    category: 'Coursework',
+    githubUrl: 'https://github.com/1911-revo/Video-Game-Team-Project',
+    featured: false,
+    status: 'Complete'
+  },
+  {
     id: 'developer-portfolio',
     title: 'Developer Portfolio',
     description:
