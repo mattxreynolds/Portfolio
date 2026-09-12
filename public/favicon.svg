@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MR monogram">
+  <rect width="64" height="64" rx="12" fill="#0f172a" />
+
+  <!-- The M terminates at the blue stem shared with the R. -->
+  <polygon
+    fill="#f8fafc"
+    points="12,50 12,14 18,14 26,28 34,14 40,14 40,50 34,50 34,26 28.5,36 23.5,36 18,26 18,50"
+  />
+
+  <!-- A square-cut R keeps its counter and diagonal leg clear at 16 px. -->
+  <rect x="34" y="14" width="6" height="36" fill="#60a5fa" />
+  <path
+    fill="#60a5fa"
+    d="M34 14h14l8 7v10l-6 7H34V14Zm6 7v11h7l3-3v-6l-3-2h-7Z"
+    fill-rule="evenodd"
+  />
+  <polygon fill="#60a5fa" points="44,35 51,35 59,50 52,50" />
+</svg>
