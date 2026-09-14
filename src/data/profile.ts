@@ -24,7 +24,7 @@ const socials = [
 export const profile = {
   name: 'Matt Reynolds',
   photoUrl,
-  role: 'Computer Science Student & Aspiring Full Stack Developer',
+  role: 'Advanced Computing Student | Full-Stack & Software Development',
   location: 'Canberra, Australia',
   email: 'matt.j.reynolds@iinet.net.au',
   socials: socials,
