@@ -45,6 +45,7 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div className='mt-6 flex flex-wrap justify-between gap-3'>
         <a
           href={project.githubUrl}
+          aria-label={`Code for ${project.title}`}
           target='_blank'
           rel='noreferrer'
           className='inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-semibold text-text-primary transition hover:bg-surface-muted'
@@ -56,6 +57,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         {project.liveUrl && (
           <a
             href={project.liveUrl}
+            aria-label={`Live Demo for ${project.title}`}
             target='_blank'
             rel='noreferrer'
             className='inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent-hover'
